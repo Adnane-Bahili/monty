@@ -89,8 +89,6 @@ void opcode(stack_t **stack, char *str, unsigned int cnt_ln);
 
 int is_digit(char *str);
 int isnumber(char *str);
-int isascii(int c);
-int getline(char **lineptr, size_t *n, FILE *stream);
 
 stack_t *add_node(stack_t **stack, const int n);
 stack_t *queue_node(stack_t **stack, const int n);
