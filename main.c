@@ -1,5 +1,6 @@
 #include "monty.h"
 
+help global;
 int status = 0;
 
 void error_usage(void);
