@@ -59,7 +59,7 @@ typedef struct instruction_s
  * @data_struct: stack mode, stack (default) and queue
  * @argument: the arguments of the string
  *
- * Description: global structure that passes the data around the functions easily
+ * Description: global structure that passes the data around the functions
  */
 typedef struct help
 {
