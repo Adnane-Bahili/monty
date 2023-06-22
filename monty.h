@@ -9,12 +9,13 @@
 
 
 /**
- * struct stack_s - equivalent doubly linked list of a stack, or queue
- * @i: integer
- * @prev: previous element pointer
- * @next: next element pointer
+ * struct stack_s - doubly linked list representation of a stack (or queue)
+ * @n: integer
+ * @prev: points to the previous element of the stack (or queue)
+ * @next: points to the next element of the stack (or queue)
  *
- * Description: node structure of doubly linked list
+ * Description: doubly linked list node structure
+ * for stack, queues, LIFO, FIFO
  */
 typedef struct stack_s
 {
@@ -24,17 +25,17 @@ typedef struct stack_s
 } stack_t;
 /**
  * struct instruction_s - opcode and its function
- * @opcode: opcode
- * @f: function that handles the opcode
+ * @opcode: the opcode
+ * @f: function to handle the opcode
  *
- * Description: functions and opcode
+ * Description: opcode and its function
+ * for stack, queues, LIFO, FIFO
  */
 typedef struct instruction_s
 {
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
 #define INSTRUCTIONS { \
 	{"push", push},\
 	{"pall", pall},\
