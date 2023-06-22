@@ -11,7 +11,7 @@ size_t print_stack(const stack_t *stack)
 
 	while (stack)
 	{
-		printf("%d\n", stack->i);
+		printf("%d\n", stack->n);
 		stack = stack->next;
 		c++;
 	}

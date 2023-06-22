@@ -16,7 +16,7 @@ void _sub(stack_t **stack, unsigned int cnt_ln)
 		status = EXIT_FAILURE;
 		return;
 	}
-	res = ((*stack)->next->i) - ((*stack)->i);
+	res = ((*stack)->next->n) - ((*stack)->n);
 	pop(stack, cnt_ln);
-	(*stack)->i = res;
+	(*stack)->n = res;
 }

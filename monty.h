@@ -18,7 +18,7 @@
  */
 typedef struct stack_s
 {
-	int i;
+	int n;
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
@@ -91,8 +91,8 @@ int isnumber(char *str);
 int isascii(int c);
 int getline(char **lineptr, size_t *n, FILE *stream);
 
-stack_t *add_node(stack_t **stack, const int i);
-stack_t *queue_node(stack_t **stack, const int i);
+stack_t *add_node(stack_t **stack, const int n);
+stack_t *queue_node(stack_t **stack, const int n);
 void free_stack(stack_t *stack);
 size_t print_stack(const stack_t *stack);
 

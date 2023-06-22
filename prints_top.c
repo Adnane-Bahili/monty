@@ -14,5 +14,5 @@ void pint(stack_t **stack, unsigned int cnt_ln)
 		status = EXIT_FAILURE;
 		return;
 	}
-	printf("%d\n", (*stack)->i);
+	printf("%d\n", (*stack)->n);
 }

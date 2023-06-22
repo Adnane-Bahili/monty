@@ -12,9 +12,9 @@ void pstr(stack_t **stack, unsigned int cnt_ln __attribute__((unused)))
 
 	while (current)
 	{
-		if (current->i <= 0 || current->i > 127)
+		if (current->n <= 0 || current->n > 127)
 			break;
-		putchar((char) current->i);
+		putchar((char) current->n);
 		current = current->next;
 	}
 	putchar('\n');

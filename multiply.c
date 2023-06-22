@@ -8,7 +8,7 @@
  */
 void _mul(stack_t **stack, unsigned int cnt_ln)
 {
-	int result;
+	int res;
 
 	if (!stack || !*stack || !((*stack)->next))
 	{
@@ -16,7 +16,7 @@ void _mul(stack_t **stack, unsigned int cnt_ln)
 		status = EXIT_FAILURE;
 		return;
 	}
-	result = ((*stack)->next->i) * ((*stack)->i);
+	res = ((*stack)->next->n) * ((*stack)->n);
 	pop(stack, cnt_ln);
-	(*stack)->i = result;
+	(*stack)->n = res;
 }

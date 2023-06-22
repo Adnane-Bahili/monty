@@ -16,13 +16,13 @@ void mod(stack_t **stack, unsigned int cnt_ln)
 		status = EXIT_FAILURE;
 		return;
 	}
-	if (((*stack)->i) == 0)
+	if (((*stack)->n) == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", cnt_ln);
 		status = EXIT_FAILURE;
 		return;
 	}
-	res = ((*stack)->next->i) % ((*stack)->i);
+	res = ((*stack)->next->n) % ((*stack)->n);
 	pop(stack, cnt_ln);
-	(*stack)->i = res;
+	(*stack)->n = res;
 }

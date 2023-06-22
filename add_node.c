@@ -2,12 +2,12 @@
 /**
  * add_node - adds node to the start of a stack_t stack
  * @stack: stack head
- * @i: new node number
+ * @n: new node number
  *
  * Return:	new node
  *		NULL when node creation fails
  */
-stack_t *add_node(stack_t **stack, const int i)
+stack_t *add_node(stack_t **stack, const int n)
 {
 	stack_t *new = malloc(sizeof(stack_t));
 
@@ -18,7 +18,7 @@ stack_t *add_node(stack_t **stack, const int i)
 		return (NULL);
 	}
 
-	new->i = i;
+	new->n = n;
 	new->next = *stack;
 	new->prev = NULL;
 

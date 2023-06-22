@@ -14,11 +14,11 @@ void pchar(stack_t **stack, unsigned int cnt_ln)
 		status = EXIT_FAILURE;
 		return;
 	}
-	if (isascii((*stack)->i) == 0)
+	if (isascii((*stack)->n) == 0)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", cnt_ln);
 		status = EXIT_FAILURE;
 		return;
 	}
-	printf("%c\n", (*stack)->i);
+	printf("%c\n", (*stack)->n);
 }

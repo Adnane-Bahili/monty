@@ -25,17 +25,17 @@ size_t stack_len(const stack_t *l)
 void swap(stack_t **stack, unsigned int cnt_ln)
 {
 	stack_t *temp = NULL;
-	int temp_i = 0;
+	int temp_n = 0;
 
 	if (stack_len(*stack) < 2)
 	{
-		fprintf(stderr, "L%u: can't swap, stack too short\n", cnt_ln);
+		fprintf(stderr, "L%d: can't swap, stack too short\n", cnt_ln);
 		status = EXIT_FAILURE;
 		return;
 	}
 	temp = *stack;
-	temp_i = temp->i;
-	temp->i = temp_i;
-	temp->i = temp->next->i;
-	temp->next->i = temp_i;
+	temp_n = temp->n;
+	temp->n = temp_n;
+	temp->n = temp->next->n;
+	temp->next->n = temp_n;
 }

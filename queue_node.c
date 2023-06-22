@@ -7,7 +7,7 @@
  * Return:	new node
  *		NULL when memalloc fails
  */
-stack_t *queue_node(stack_t **stack, const int i)
+stack_t *queue_node(stack_t **stack, const int n)
 {
 	stack_t *new = malloc(sizeof(stack_t));
 	stack_t *current = *stack;
@@ -18,7 +18,7 @@ stack_t *queue_node(stack_t **stack, const int i)
 		return (NULL);
 	}
 
-	new->i = i;
+	new->n = n;
 
 	if (!*stack)
 	{
