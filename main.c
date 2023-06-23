@@ -17,6 +17,7 @@ void file_error(char *argv);
 int main(int argc, char **argv)
 {
 	FILE *file;
+
 	size_t buf_len = 0;
 	char *buffer = NULL;
 	char *str = NULL;
@@ -24,7 +25,6 @@ int main(int argc, char **argv)
 	unsigned int cnt_ln = 1;
 	global.data_struct = 1;
 	
-
 	if (argc != 2)
 		error_usage();
 
