@@ -17,11 +17,11 @@ void file_error(char *argv);
 int main(int argc, char **argv)
 {
 	FILE *file;
-
 	size_t buf_len = 0;
 	char *buffer = NULL;
 	char *str = NULL;
 	stack_t *stack = NULL;
+
 	unsigned int cnt_ln = 1;
 	global.data_struct = 1;
 	
