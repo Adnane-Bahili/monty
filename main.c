@@ -23,8 +23,9 @@ int main(int argc, char **argv)
 	stack_t *stack = NULL;
 
 	unsigned int cnt_ln = 1;
+
 	global.data_struct = 1;
-	
+
 	if (argc != 2)
 		error_usage();
 
